@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="lt" class="">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+    <h2> FK TEC rungtynių anonsų generatorius</h2>
+    <div class="wrapper">
+        <div class="anonsas">
+            <div class="liutas">
+            </div>
+            <div class="komandos">
+                <div class="fktec">
+                    <img src="./assets/komandos/tec.png">
+                </div>
+                <div class="game-time">
+                    <div class="date">04/20</div>
+                    <div class="time">16:00</div>
+                </div>
+                <div class="varzovai">
+                    <img src="./assets/komandos/navigatoriai.png" alt="varzovu logo">
+                </div>
+            </div>
+            <div class="info">
+                <div class="box box-1 league">
+                    Vilniaus m. <br> III Lyga
+                </div>
+                <div class="box box-2 stadium">
+                    Fanų stadionas
+                </div>
+                <div class="logo">
+                    <img src="https://imgur.com/G7M342X.png" alt="" class="src">
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+
+            <div class="input-group">
+                <label for="competitor">Varžovas</label>
+                <select name="competitor" id="competitor">
+                    <option value="navigatoriai">FK Navigatoriai</option>
+                    <option value="afk">AFK</option>
+                    <option value="aktas">Aktas</option>
+                    <option value="elektrenai">FK Elektrėnų Versmė</option>
+                    <option value="medziai">FK Medžiai</option>
+                    <option value="spartakas">FKK Spartakas</option>
+                    <option value="granitas">Granitas</option>
+                    <option value="baltai">Kaišiadorys-Baltai</option>
+                    <option value="ozas">Ozas</option>
+                    <option value="salininkai">Salininkai</option>
+                    <option value="vilkai">VGTU-Vilkai</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="date">Data</label>
+                <input type="date" id="date" name="date" value="2018-04-20">
+            </div>
+            <div class="input-group">
+                <label for="time">Laikas</label>
+                <input type="time" id="time" name="time" step="300" value="16:20">
+            </div>
+            <div class="input-group">
+                <label for="stadium">Stadionas</label>
+                <select name="stadium" id="stadium">
+                    <option value="Senvagės stadionas">Senvagės stadionas</option>
+                    <option value="Fanų stadionas">Fanų stadionas</option>
+                    <option value="Dilgynė">Dilgynė</option>
+                    <option value="LFF stadionas">LFF stadionas</option>
+                    <option value="Žiežmarių stadionas">Žiežmarių stadionas</option>
+                    <option value="Elektrėnų SM">Elektrėnų SM</option>
+                    <option value="Panerio">Panerio</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="away">Žaidžiam išvykoje?</label>
+                <input type="checkbox" id="away" name="away" data-toggle="toggle">
+            </div>
+            <div class="input-group">
+                <input type="button" id="save" name="save" value="Viskas ok! Išsaugoti rezultatą">
+            </div>
+            <!--
+            <div class="input-group">
+                <label for="league">Lyga</label>
+                <input type="text" id="league" name="league">
+            </div>
+            -->
+        </div>
+    </div>
+<script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.js"></script>
+<script src="./logic.js"></script>
+</script>
+</body>
+</html>
