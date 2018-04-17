@@ -9,6 +9,4 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/index.html'));
 });
   
-//pp.get('/', (req, res) => res.render('index'))
-
-app.listen(process.env.PORT || 5000, () => console.log('Example app listening on port 3000!'))
+app.listen(process.env.PORT || 5000, () => console.log('Example app listening on port 5000!'))
