@@ -3,12 +3,12 @@ const pieOptions = {
         type: 'pie',
         options3d: {
             enabled: true,
-            alpha: 50,
+            alpha: 55,
+            beta: 0,
         },
     },
     plotOptions: {
         pie: {
-            innerSize: 100,
             depth: 50,
             allowPointSelect: true,
             cursor: 'pointer',
