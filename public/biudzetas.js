@@ -23,11 +23,9 @@ const pieOptions = {
 Highcharts.chart('revenue', {
     ...pieOptions,
     title: {
-        text: 'TEC komandos 2017 - 2018 metų biudžetas',
-    },
-    subtitle: {
         text: 'Išlaidos',
         style: {
+			'font-weight': 'bold',
             'font-size': '20px',
             color: 'red',
         },
@@ -51,12 +49,9 @@ Highcharts.chart('revenue', {
 Highcharts.chart('expense', {
     ...pieOptions,
     title: {
-        text: 'TEC komandos 2017 - 2018 metų biudžetas',
-    },
-    subtitle: {
         text: 'Pajamos',
         style: {
-            'font-weight:': '900',
+			'font-weight': 'bold',
             'font-size': '20px',
             color: 'green',
         },
