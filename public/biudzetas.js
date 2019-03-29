@@ -3,13 +3,13 @@ const pieOptions = {
         type: 'pie',
         options3d: {
             enabled: true,
-            alpha: 55,
+            alpha: 60,
             beta: 0,
         },
     },
     plotOptions: {
         pie: {
-            depth: 50,
+            depth: 70,
             allowPointSelect: true,
             cursor: 'pointer',
             dataLabels: {
