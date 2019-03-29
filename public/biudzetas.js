@@ -18,6 +18,9 @@ const pieOptions = {
             },
         },
     },
+    tooltip: {
+        pointFormat: '{series.name}: <b>€ {point.y}</b>',
+    },
 };
 
 Highcharts.chart('revenue', {
@@ -25,15 +28,11 @@ Highcharts.chart('revenue', {
     title: {
         text: 'Išlaidos',
         style: {
-			'font-weight': 'bold',
-            'font-size': '20px',
+            'font-weight': 'bold',
             color: 'red',
         },
     },
     colors: ['#D03B5B', '#ff0039', '#aa0026'],
-    tooltip: {
-        pointFormat: '{series.name}: <b>€ {point.y}</b>',
-    },
     series: [
         {
             name: 'Išlaidos',
@@ -51,13 +50,9 @@ Highcharts.chart('expense', {
     title: {
         text: 'Pajamos',
         style: {
-			'font-weight': 'bold',
-            'font-size': '20px',
+            'font-weight': 'bold',
             color: 'green',
         },
-    },
-    tooltip: {
-        pointFormat: '{series.name}: <b>€ {point.y}</b>',
     },
     series: [
         {
