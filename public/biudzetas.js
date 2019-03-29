@@ -19,6 +19,9 @@ const pieOptions = {
         },
     },
     tooltip: {
+        shape: 'square',
+        shadow: false,
+        borderWidth: 0,
         pointFormat: '{series.name}: <b>€ {point.y}</b>',
     },
 };
@@ -32,14 +35,16 @@ Highcharts.chart('revenue', {
             color: 'red',
         },
     },
-    colors: ['#D03B5B', '#ff0039', '#aa0026'],
+    colors: ['#D03B5B', '#ff0039', '#aa0026', '#FA1010', '#CA5632'],
     series: [
         {
             name: 'Išlaidos',
             data: [
-                ['Rungtynės', 200],
-                ['Turnyrų mokesčiai', 100],
-                ['Stadionas', 300],
+                ['Startiniai mokesčiai', 1905.0],
+                ['Draugiškos', 320.0],
+                ['Treniruotės', 245.0],
+                ['Stadionas', 1210.0],
+                ['Kitos', 415.66],
             ],
         },
     ],
@@ -54,13 +59,15 @@ Highcharts.chart('expense', {
             color: 'green',
         },
     },
+    colors: ['#37AE82', '#05F559', '#88CE89', '#0A8D61'],
     series: [
         {
-            name: 'Išlaidos',
+            name: 'Pajamos',
             data: [
-                ['2% Parama', 200],
-                ['Nario mokesti', 100],
-                ['Rėmėjai', 300],
+                ['2% Parama', 1215.13],
+                ['Rėmėjai', 500.0],
+                ['Nario mokesčiai', 1998.0],
+                ['Kitos', 105.0],
             ],
         },
     ],
